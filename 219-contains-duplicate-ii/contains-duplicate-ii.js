@@ -16,9 +16,9 @@ var containsNearbyDuplicate = function(nums, k) {
         set.add(nums[right]);
 
         if (set.size > k) {
-            set.delete(nums[left])
-            left++
+            set.delete(nums[left]);
+            left++;
         }
     }
-    return false
+    return false;
 };
